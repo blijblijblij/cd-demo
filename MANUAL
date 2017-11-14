@@ -1,0 +1,40 @@
+ _             _     _ _
+| |_ __ _  ___| |__ (_) | _____  _ __ ___   __ _
+| __/ _` |/ __| '_ \| | |/ / _ \| '_ ` _ \ / _` |
+| || (_| | (__| | | | |   < (_) | | | | | | (_| |
+ \__\__,_|\___|_| |_|_|_|\_\___/|_| |_| |_|\__,_|
+
+"friendly robot at your disposal"
+			https://en.wikipedia.org/wiki/Tachikoma
+
+created by Rogier Wessel
+> GitHub  : https://github.com/blijblijblij
+> Twitter : https://twitter.com/blijblijblij
+
+---------------------------Commands Manual---------------------------
+
+COPYRIGHT
+		Copyright (C) 2017 Rogier Wessel - All Rights Reserved
+		https://github.com/blijblijblij/cd-demo
+
+NAME
+		tachikoma - manage this continuous delivery demo
+
+DESCRIPTION
+		tachikoma works in bash
+		tachikoma depends on some *nix / macos os, less, docker, docker-machine, figlet, lolcat
+
+OPTIONS
+		-h or --help or help
+			show a help page.
+
+VERSION
+		Currently the version is $0.0.1
+		Please visits Github releases page for changelogs.
+			https://github.com/blijblijblij/cd-demo/releases
+
+
+BUGS
+		Please reports bugs by adding issues on Github repo.
+		The url is here:
+			https://github.com/blijblijblij/cd-demo/issues

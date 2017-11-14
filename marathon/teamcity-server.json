@@ -1,0 +1,58 @@
+{
+  "id": "/teamcity/server",
+  "cmd": null,
+  "cpus": 0.5,
+  "mem": 2048,
+  "disk": 5000,
+  "instances": 1,
+  "constraints": [
+    [
+      "hostname",
+      "UNIQUE"
+    ]
+  ],
+  "acceptedResourceRoles": [
+    "*"
+  ],
+  "container": {
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "blijblijblij/cd-demo:teamcityserver10",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "containerPort": 8111,
+          "hostPort": 0,
+          "servicePort": 8111,
+          "protocol": "tcp",
+          "labels": {}
+        }
+      ],
+      "privileged": false,
+      "parameters": [],
+      "forcePullImage": true
+    }
+  },
+  "env": {
+    "TEAMCITY_SERVER_MEM_OPTS": "-Xmx2g -XX:MaxPermSize=270m -XX:ReservedCodeCacheSize=350m"
+  },
+  "healthChecks": [
+    {
+      "gracePeriodSeconds": 300,
+      "intervalSeconds": 10,
+      "timeoutSeconds": 10,
+      "maxConsecutiveFailures": 3,
+      "portIndex": 0,
+      "protocol": "TCP"
+    }
+  ],
+  "portDefinitions": [
+    {
+      "port": 8111,
+      "protocol": "tcp",
+      "name": "default",
+      "labels": {}
+    }
+  ]
+}
